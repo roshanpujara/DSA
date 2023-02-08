@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array traversing and accessing in Data Structure </title>
+    <script>
+        // Array Traversing
+        const arr = [2, 9, 0, 7, 5, 8, 6];
+        for (let i = 0; i < arr.length; i++) {
+            document.write(`${arr[i]} <br>`);
+        }
+        //Array Accessing with the help of input box and button
+        const getData = () => {
+            const x = document.getElementById("data").value;
+            (x < arr.length && typeof (parseInt(x)) === "number") ? document.write(arr[x]) : document.write("invalid data")
+        }
+    </script>
+</head>
+
+<body>
+    <input id="data" placeholder="type here">
+    <button onclick="getData()">click here</button>
+</body>
+
+</html>
